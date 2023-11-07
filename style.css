@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Noto Sans KR';
+  width: 100%;
+  /* background: #CC95C0;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: -20px;
+}
+
+.navbar_logo{
+  display: block;
+  width: 90px; /* 이미지의 너비 */
+  height: 90px; /* 이미지의 높이 */
+  background-image: url('img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.navbar_menu{
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 40px;  
+}
+
+.navbar_menu li{
+  padding: 8px 20px;
+}
+
+.navbar_menu a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: black; /* 링크 색상 지정 */
+}
+
+.navbar_menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar_toggleBtn{
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_toggleBtn{
+    display: block;
+  }
+  .navbar_menu.active{
+    display: flex;
+  }
+  .row{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero2, .content2, .container, .card{ 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+
+.hero{
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  position: relative;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.custom-shape-divider-bottom-1698820466 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698820466 svg {
+  position: relative;
+  display: block;
+  width: calc(172% + 1.3px);
+  height: 227px;
+}
+
+.custom-shape-divider-bottom-1698820466 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.hero h1{
+  font-size: 2.5vw;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.hero h3{
+  font-size: 1.5vw;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.row{
+  display: flex;
+  place-content: center;
+}
+
+.company {
+  width: 300px;
+  height: 300px; 
+  border-radius: 70%;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.company_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.desc{
+  margin-top: 100px;
+  margin-left: 40px;
+  text-align: left;
+}
+
+.desc h1{
+  font-size: 24px;
+}
+
+.desc h3{
+  font-size: 18px;
+}
+
+
+.hero2{
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  position: relative;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.container{
+  display: flex;
+  position: relative;
+  margin-top: -80px;
+  bottom: -80px;
+  margin-bottom: 60px;
+}
+
+.card{
+  background: white;
+  width: 450px;
+  height: 350px;
+  margin: 30px;
+
+  border-radius: 15px;
+}
+
+.card-image{
+  background-size: cover;
+  height: 250px;
+  margin-bottom: 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+.ssp_adconnect{
+  background-image: url(./img/img_3.png);
+}
+
+.ad_consult{
+  background-image: url(./img/img_2.png);
+}
+
+.card h2{
+  color: black;
+}
+
+.card p{
+  padding: 10px;
+  color: black;
+}
+
+.custom-shape-divider-top-1698830322 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1698830322 svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 176px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1698830322 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.content2 h1{
+  font-size: 28px;
+  letter-spacing: 1px;
+  position: relative;
+  margin-top: 150px;
+}
+
+.p_desc{
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 30px auto;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+
+.hero3{
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  position: relative;
+  color: #fff;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.contact{
+  place-content: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.contact h1{
+  position: relative;
+  padding: 5px;
+}
+
+.custom-shape-divider-top-1698884114 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1698884114 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 126px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1698884114 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+.form input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  border-radius: 10px;
+  border-color: #86A8E7;
+  font-family: 'Noto Sans KR';
+}
+
+.form textarea{
+  padding: 10px;
+  display: flex;
+  border-radius: 10px;
+  border-color: #86A8E7;
+  font-family: 'Noto Sans KR';
+}
+
+.form button{
+  padding: 10px;
+  border-radius: 5px;
+  width: 60%;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+  background: #86A8E7;
+  color: white;
+  font-family: 'Noto Sans KR';
+}
+
+.end{
+    font-size: 10px;
+    text-align: cetner;
+}
