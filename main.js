@@ -4,7 +4,7 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if (value > 1000 && value <= 1530) {
+    if (value > 900 && value <= 1500) {
         adcoreDbElement.style.opacity = 1;
         adcoreDbElement.style.transform = "translateX(0)";
     } else {
@@ -19,7 +19,7 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if (value > 1000 && value <= 1530) {
+    if (value > 900 && value <= 1500) {
         offerTextElement.style.opacity = 1;
         offerTextElement.style.transform = "translateX(0)";
     } else {
@@ -34,7 +34,7 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if (value > 1530 && value <= 2030) {
+    if (value > 1450 && value <= 2030) {
         datamktElement.style.opacity = 1;
         datamktElement.style.transform = "translateX(0)";
     } else {
@@ -49,7 +49,7 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     console.log("scrollY", value);
 
-    if (value > 1530 && value <= 2030) {
+    if (value > 1450 && value <= 2030) {
         sec_offerTextElement.style.opacity = 1;
         sec_offerTextElement.style.transform = "translateX(0)";
     } else {
