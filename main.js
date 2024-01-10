@@ -57,3 +57,8 @@ window.addEventListener("scroll", function() {
         sec_offerTextElement.style.transform = "translateX(400px)";
     }
 });
+
+function openNewWindow() {
+    event.preventDefault();
+    window.open('privacy.html', '_blank', 'width=600,height=400'); 
+}
