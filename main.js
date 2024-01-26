@@ -2,7 +2,6 @@ let adcoreDbElement = document.getElementById("adcore_db");
 
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    console.log("scrollY", value);
 
     if (value > 900 && value <= 1500) {
         adcoreDbElement.style.opacity = 1;
@@ -17,7 +16,6 @@ let offerTextElement = document.getElementsByClassName("offer_text")[0];
 
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    console.log("scrollY", value);
 
     if (value > 900 && value <= 1500) {
         offerTextElement.style.opacity = 1;
@@ -32,7 +30,6 @@ let datamktElement = document.getElementById("data_mkt");
 
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    console.log("scrollY", value);
 
     if (value > 1450 && value <= 2030) {
         datamktElement.style.opacity = 1;
@@ -47,7 +44,6 @@ let sec_offerTextElement = document.getElementsByClassName("offers2_text")[0];
 
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    console.log("scrollY", value);
 
     if (value > 1450 && value <= 2030) {
         sec_offerTextElement.style.opacity = 1;
